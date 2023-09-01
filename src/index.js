@@ -36,6 +36,18 @@ import Product from "views/screens/product/index.js";
 import Receive from "views/screens/receive/index.js";
 import Sales from "views/screens/product/index.js";
 
+
+
+
+
+
+
+
+
+import DataType from "views/screens/datatype/index.js";
+
+
+
 import UserContextProvider from './context/user-info-context';
 
 //import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
@@ -85,6 +97,7 @@ ReactDOM.render(
             <Route path="/product" render={(props) => <Product {...props} />} />
             <Route path="/receive" render={(props) => <Receive {...props} />} />
             <Route path="/sales" render={(props) => <Sales {...props} />} />
+            <Route path="/datatype" render={(props) => <DataType {...props} />} />
 
 
             {/* <Route path="/error-log" render={(props) => <Errorlog {...props} />} />
