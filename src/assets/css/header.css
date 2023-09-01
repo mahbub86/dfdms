@@ -1,0 +1,187 @@
+.navbar {
+    /*  NAVIGATION BAR */
+    height: 80px;
+    background-color: var(--primary-color);
+    border: var(--header-border);
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo {
+    /* DIV STYLE FOR LOGO */
+    width: 5%;
+    /* width: 60px; */
+    padding: 4px;
+}
+
+.logo img {
+    /* STYLE FOR LOGO IMAGE */
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+}
+
+.menuBar {
+    flex-shrink: 1;
+    width: 75%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menuListBar {
+    width: 100%;
+    padding: 4px 0px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.menuListBar li,
+.userPanel li {
+    /* STYLE FOR MENUE BAR ITEM */
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    /* display: inline-block; */
+    margin-right: 16px;
+    padding-left: 8px;
+    font-size: 1rem;
+}
+
+.dropdownMenu {
+    /* STYLE FOR DROPDOWN ITEM */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownList {
+    /* STYLE FOR DROPDOWN LIST */
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    min-width: 220px;
+    margin-left: -8px;
+    border-radius: 4px;
+    padding: 8px 8px;
+    z-index: 1;
+}
+
+.dropdownList li {
+    /* STYLE FOR MENUE LIST ITEM */
+    margin: 10px 0px;
+}
+
+.dropdownMenu:hover .dropdownList {
+    display: block;
+}
+
+.dropdownList li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.dropdownList li a:hover {
+    color: greenyellow;
+    /* font-size: 1.2rem; */
+}
+
+
+.parentMenu {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+.menuIconBar {
+    width: 100%;
+    padding-left: 8px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menuIconBar img {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid white;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4);
+    background-color: bisque;
+    /* margin-right: 30px; */
+}
+
+.menuIconBar a {
+    margin-right: 30px;
+}
+
+.userPanel {
+    padding-right: 8px;
+    width: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end; 
+    align-items: center;
+}
+
+.userPanel img {
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.userPanel li {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: .8rem;
+    margin-right: 0px;
+}
+
+.userPanel li a {
+    font-size: .8rem;
+}
+
+.userPanel .dropdownList {
+    /* STYLE FOR DROPDOWN LIST */
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 2px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    /* padding: 8px 8px; */
+    z-index: 1;
+}
+
+.userPanel label{
+    color: greenyellow;
+    font-size: .8rem;
+}

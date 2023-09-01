@@ -1,0 +1,220 @@
+/* SALES HEADER DESIGN */
+.salesHeader {
+    /* width: 70%; */
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+}
+
+.salesHeader label,
+.salesCalculation label {
+    text-align: end;
+    padding-top: 4px;
+    padding-right: 4px;
+}
+
+.salesHeader-part1 {
+
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-row-gap: 4px;
+}
+
+.salesHeader-part2 {
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.salesHeader-part3 {
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.salesHeader-part4 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* row-gap: 8px; */
+}
+
+.salesHeader-part5 {
+    width: 15%;
+    background-color: var(--primary-color);
+    border: var(--box-border);
+    border-radius: 8px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 2px;
+}
+
+#mrp {
+    width: 50%;
+}
+
+.btnHold,
+.btnRecall {
+    font-size: .8rem;
+    height: 20px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0px;
+    color: black;
+}
+
+.btnHold {
+    background-color: rgba(156, 216, 195, 0.5);
+}
+
+.btnRecall {
+    background-color: rgb(205, 155, 155);
+}
+
+.btnVoid {
+    background-color: rgb(97, 177, 206);
+}
+
+.btnExchange {
+    background-color: rgb(208, 179, 110);
+}
+
+/* SALES BODY */
+.salesBody {
+    /* height: 450px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.salesDetail {
+    background-color: var(--container-color);
+    width: 65%;
+    padding: 4px;
+    border: var(--box-border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.salesBodyAction{
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.invDiscount{
+    /* border: 2px solid goldenrod; */
+    width: 50%;
+    background-color: var(--table-rowOddBackground);
+    border-radius: 4px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 2px;
+}
+.invDiscount label{
+padding-top: 4px;
+}
+
+.btnAction{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* SALES CALCULATION PART */
+
+.salesCalculation {
+    width: 20%;
+    border: var(--header-border);
+    background-color: var(--container-color);
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salesCalculation h4 {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--headerFont-color);
+    /* margin-bottom: 8px; */
+    height: 20px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.autoCalc{
+    background-color:var(--table-rowEvenBackground);
+    border-radius: 4px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 2px; 
+}
+
+
+.salesCalculation h3{
+    /* margin-top: 4px; */
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    /* margin-bottom: 8px; */
+    height: 20px;
+}
+
+#netPayment{
+    height: 35px;
+    font-size: 2rem;
+    background-color: green;
+    color: yellow;
+    text-align: center;
+}
+
+.payment{
+    margin-top: 4px;
+    background-color: goldenrod;
+    border-radius: 4px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 2px; 
+}
+.payment input,
+.payment select{
+    height: 25px;
+    font-size: 1rem;
+}
+.payment label{
+    font-size: .7rem;
+    font-weight: bold;
+    padding-right: 0px;
+}
+
+.holdDetail {
+    background-color: var(--container-color);
+    width: 14.5%;
+    border: var(--header-border);
+    border-radius: 8px;
+    padding: 4px;
+}
